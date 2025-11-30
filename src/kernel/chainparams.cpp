@@ -133,10 +133,14 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x8e6192d4f0a7428cc73c0209232965c682ee56ab19d5aeca4b30e6a08f35a05d"));
 
         // DNS seeds for SuperAxeCoin network
-        vSeeds.emplace_back("seed1.superaxecoin.org");
-        vSeeds.emplace_back("seed2.superaxecoin.org");
-        vSeeds.emplace_back("seed3.superaxecoin.org");
-        vSeeds.emplace_back("seed.axe.community");
+        vSeeds.emplace_back("seed1.superaxecoin.com");
+        vSeeds.emplace_back("seed2.superaxecoin.com");
+        vSeeds.emplace_back("seed3.superaxecoin.com");
+        
+        // Hardcoded IP seed nodes
+        vSeeds.emplace_back("104.236.106.124");  // NYC
+        vSeeds.emplace_back("64.225.115.108");   // SFO  
+        vSeeds.emplace_back("161.35.82.147");    // AMS
 
         // Address prefixes
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);   // 'S' prefix
@@ -228,8 +232,13 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.emplace_back("testnet-seed.superaxecoin.org");
-        vSeeds.emplace_back("testnet.axe.community");
+        vSeeds.emplace_back("testnet-seed1.superaxecoin.com");
+        vSeeds.emplace_back("testnet-seed2.superaxecoin.com");
+        
+        // Hardcoded testnet IP seed nodes
+        vSeeds.emplace_back("104.236.106.124");  // NYC
+        vSeeds.emplace_back("64.225.115.108");   // SFO  
+        vSeeds.emplace_back("161.35.82.147");    // AMS
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 196);
