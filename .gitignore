@@ -175,3 +175,6 @@ config.log
 config.status
 libtool
 Makefile
+
+# Website development files
+site/
