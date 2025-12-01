@@ -4,8 +4,28 @@ Some notes on how to build SuperAxeCoin Core in Unix.
 
 (For BSD specific instructions, see `build-*bsd.md` in this directory.)
 
-To Build
----------------------
+## Quick Start for Mining Pool Integration
+
+For building SuperAxeCoin daemon with SQLite wallet support (recommended for mining pools):
+
+```bash
+# Install dependencies
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
+sudo apt-get install libevent-dev libboost-dev libsqlite3-dev
+
+# Build the daemon
+./autogen.sh
+./configure --enable-wallet
+make clean  # Always clean before major builds
+make src/superaxecoind src/superaxecoin-cli -j$(nproc)
+
+# Deploy to production location
+sudo mkdir -p /home/nodes/superaxecoin/bin
+sudo cp src/superaxecoind src/superaxecoin-cli /home/nodes/superaxecoin/bin/
+sudo chmod +x /home/nodes/superaxecoin/bin/*
+```
+
+## Standard Build Process
 
 ```bash
 ./autogen.sh

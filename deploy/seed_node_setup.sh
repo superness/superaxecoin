@@ -128,6 +128,7 @@ systemctl daemon-reload
 
 # Configure firewall
 echo "[8/8] Configuring firewall..."
+ufw allow 22/tcp comment 'SSH'
 ufw allow 8833/tcp comment 'SuperAxeCoin Mainnet P2P'
 ufw allow 18833/tcp comment 'SuperAxeCoin Testnet P2P'
 ufw --force enable
