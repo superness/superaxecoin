@@ -17,6 +17,9 @@ interface, which can be optionally built.
 
 Further information about SuperAxeCoin Core is available in the [doc folder](/doc).
 
+<img width="393" height="393" alt="image" src="https://github.com/user-attachments/assets/663c933a-e956-45cc-9f41-1c9bacf7e6d4" />
+
+
 Related Projects
 ----------------
 
