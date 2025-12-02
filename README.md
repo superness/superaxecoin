@@ -3,6 +3,8 @@ SuperAxeCoin Core integration/staging tree
 
 https://superaxecoincore.org
 
+> **Looking for the GUI Wallet?** Check out [SuperAxeCoin Wallet](https://github.com/superaxecoin/superaxecoin-wallet) - a cross-platform desktop wallet with an easy-to-use interface for Windows and Linux.
+
 For an immediately usable, binary version of the SuperAxeCoin Core software, see
 https://superaxecoincore.org/en/download/.
 
@@ -14,6 +16,11 @@ validate blocks and transactions. It also includes a wallet and graphical user
 interface, which can be optionally built.
 
 Further information about SuperAxeCoin Core is available in the [doc folder](/doc).
+
+Related Projects
+----------------
+
+- [SuperAxeCoin Wallet](https://github.com/superaxecoin/superaxecoin-wallet) - Cross-platform GUI wallet (Electron-based)
 
 License
 -------
