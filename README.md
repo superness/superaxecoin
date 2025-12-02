@@ -1,12 +1,12 @@
 SuperAxeCoin Core integration/staging tree
 =====================================
 
-https://superaxecoincore.org
+https://superaxecoin.com
 
-> **Looking for the GUI Wallet?** Check out [SuperAxeCoin Wallet](https://github.com/superaxecoin/superaxecoin-wallet) - a cross-platform desktop wallet with an easy-to-use interface for Windows and Linux.
+> **Looking for the GUI Wallet?** Check out [SuperAxeCoin Wallet](https://github.com/superness/superaxecoinwallet/releases) - a cross-platform desktop wallet with an easy-to-use interface for Windows and Linux.
 
 For an immediately usable, binary version of the SuperAxeCoin Core software, see
-https://superaxecoincore.org/en/download/.
+https://github.com/superness/superaxecoin/releases
 
 What is SuperAxeCoin Core?
 ---------------------
@@ -20,7 +20,8 @@ Further information about SuperAxeCoin Core is available in the [doc folder](/do
 Related Projects
 ----------------
 
-- [SuperAxeCoin Wallet](https://github.com/superaxecoin/superaxecoin-wallet) - Cross-platform GUI wallet (Electron-based)
+- [SuperAxeCoin Wallet](https://github.com/superness/superaxecoinwallet) - Cross-platform GUI wallet (Electron-based)
+- [SuperAxeCoin Website](https://superaxecoin.com) - Official website with explorer and mining info
 
 License
 -------
@@ -32,13 +33,8 @@ Development Process
 -------------------
 
 The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
-completely stable. [Tags](https://github.com/superaxecoin/superaxecoin/tags) are created
+completely stable. [Tags](https://github.com/superness/superaxecoin/tags) are created
 regularly from release branches to indicate new official, stable release versions of SuperAxeCoin Core.
-
-The https://github.com/superaxecoin-core/gui repository is used exclusively for the
-development of the GUI. Its master branch is identical in all monotree
-repositories. Release branches and tags do not exist, so please do not fork
-that repository unless it is for development reasons.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
@@ -72,14 +68,9 @@ code. This is especially important for large or high-risk changes. It is useful
 to add a test plan to the pull request description if testing the changes is
 not straightforward.
 
-Translations
-------------
+Community
+---------
 
-Changes to translations as well as new translations can be submitted to
-[SuperAxeCoin Core's Transifex page](https://www.transifex.com/superaxecoin/superaxecoin/).
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+- Website: https://superaxecoin.com
+- Mining Pool: https://superaxepool.com
+- GitHub: https://github.com/superness/superaxecoin
